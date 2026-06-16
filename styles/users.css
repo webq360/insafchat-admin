@@ -1,0 +1,64 @@
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Stat Card Icons */
+.total { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%) !important; color: #1e40af; }
+.online { background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%) !important; color: #166534; }
+.offline { background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%) !important; color: #6b7280; }
+
+/* Hover Effects */
+.refreshBtn:hover {
+  background: #059669 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3) !important;
+}
+
+.userCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+  border-color: #10b981 !important;
+}
+
+.actionBtn.view:hover {
+  background: #10b981 !important;
+  color: white !important;
+}
+
+.actionBtn.block:hover {
+  background: #f59e0b !important;
+  color: white !important;
+}
+
+.actionBtn.delete:hover {
+  background: #ef4444 !important;
+  color: white !important;
+}
+
+.modalBtn.block {
+  background: #f59e0b;
+  color: white;
+}
+
+.modalBtn.block:hover {
+  background: #d97706;
+}
+
+.modalBtn.delete {
+  background: #ef4444;
+  color: white;
+}
+
+.modalBtn.delete:hover {
+  background: #dc2626;
+}
+
+.closeBtn:hover {
+  background: #e5e7eb !important;
+}
+
+.searchInputWrapper:focus-within {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
