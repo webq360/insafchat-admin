@@ -63,6 +63,13 @@ const UserCircleIcon = () => (
   </svg>
 );
 
+const WithdrawIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+    <line x1="1" y1="10" x2="23" y2="10"></line>
+  </svg>
+);
+
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -101,6 +108,12 @@ export default function Layout({ children }: LayoutProps) {
       icon: <UsersIcon />,
       href: '/users',
       active: router.pathname === '/users',
+    },
+    {
+      name: 'Withdrawals',
+      icon: <WithdrawIcon />,
+      href: '/withdrawals',
+      active: router.pathname === '/withdrawals',
     },
     {
       name: 'Settings',
